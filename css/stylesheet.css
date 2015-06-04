@@ -2,6 +2,9 @@ html, body {
 	width: 100%;
 	/* font here */
 }
+body {
+	margin-bottom: -1%;
+}
 
 /* colors!
 pink: #ff2468
@@ -225,8 +228,12 @@ ul.img-list li:hover span.text-content {
 	margin-left: 25%;
 }
 
+.jobheader {
+	text-align: center;
+}
 
-#portfolio {
+
+#contact {
 	background-color: #00a5a6;
 	width: 100%;
 	padding-top: 2%;
