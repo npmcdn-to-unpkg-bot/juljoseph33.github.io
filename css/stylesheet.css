@@ -236,8 +236,11 @@ ul.img-list li:hover span.text-content {
 #contact {
 	background-color: #00a5a6;
 	width: 100%;
-	padding-top: 2%;
 	margin-left: -1%;
 	padding-left: 1%;
-	padding-bottom: 2%;
+	text-align: center;
+}
+#contact img {
+	width: 40px;
+	padding: 1%;
 }
