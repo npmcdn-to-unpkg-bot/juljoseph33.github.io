@@ -247,7 +247,7 @@ ul.img-list li:hover span.text-content {
 #email {
 	float: left;
 	margin-top: 2.5%;
-	margin-left: 35%;
+	margin-left: 36%;
 }
 #phone {
 	float: left;
@@ -260,5 +260,5 @@ ul.img-list li:hover span.text-content {
 	padding: 1%;
 }
 #fb {
-	margin-left: -36%;
+	margin-left: -30%;
 }
