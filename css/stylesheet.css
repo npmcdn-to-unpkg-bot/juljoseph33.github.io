@@ -231,6 +231,9 @@ ul.img-list li:hover span.text-content {
 .jobheader {
 	text-align: center;
 }
+#is, #ean {
+	display: none;
+}
 
 
 #contact {
@@ -239,8 +242,23 @@ ul.img-list li:hover span.text-content {
 	margin-left: -1%;
 	padding-left: 1%;
 	text-align: center;
+	color: white;
+}
+#email {
+	float: left;
+	margin-top: 2.5%;
+	margin-left: 35%;
+}
+#phone {
+	float: left;
+	clear: both;
+	margin-left: 36%;
+	/*margin-top: 0.5%;*/
 }
 #contact img {
 	width: 40px;
 	padding: 1%;
+}
+#fb {
+	margin-left: -36%;
 }
