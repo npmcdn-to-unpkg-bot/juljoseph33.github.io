@@ -275,7 +275,7 @@ ul.img-list li:hover span.text-content {
 }
 .projects {
 	/*display: inline;*/
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 	webkit-transition: margin-bottom 0.5s;
 	transition: margin-bottom 0.5s;
 }
