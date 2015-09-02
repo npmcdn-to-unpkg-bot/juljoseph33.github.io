@@ -297,6 +297,13 @@ ul.img-list li:hover span.text-content {
 	color: #ff2468;
 	cursor: pointer;
 }
+#anabels {
+	text-decoration: none;
+	color: #00a5a6;
+}
+#anabels:hover {
+	color: #ff2468;
+}
 
 #contact {
 	background-color: #00a5a6;
