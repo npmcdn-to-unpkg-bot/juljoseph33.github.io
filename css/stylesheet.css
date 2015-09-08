@@ -15,6 +15,10 @@ lighter blue: #00a5a6
 darker blue: #005b63
  */
 
+.pink {
+	color: #ff2468;
+}
+
 .bold {
 	font-weight: 900;
 }
