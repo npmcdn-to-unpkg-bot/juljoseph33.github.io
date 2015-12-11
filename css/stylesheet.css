@@ -19,6 +19,10 @@ darker blue: #005b63
 	color: #ff2468;
 }*/
 
+.blue {
+	color: #00a5a6;
+}
+
 .bold {
 	font-weight: 900;
 }
@@ -99,6 +103,8 @@ darker blue: #005b63
   float: left;
   margin-top: -11%;
   z-index: 200;
+  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 #learnmore:hover {
 	/*border: 2px solid white;*/
@@ -157,6 +163,9 @@ darker blue: #005b63
     padding-top: 4%;
     padding-bottom: 4%;
 }
+#school .blue {
+	-webkit-filter: none;
+}
 #school p {
 	width: 45%;
 	margin-left: 27.5%;
@@ -205,6 +214,8 @@ ul.img-list {
   margin: 0;
   padding: 0;
   text-align: center;
+  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
  
 ul.img-list li {
@@ -225,6 +236,8 @@ span.text-content {
   overflow: hidden;
   opacity: 0;
   width: 100%;
+  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 span.text-content span {
   display: table-cell;
@@ -304,6 +317,8 @@ ul.img-list li:hover span.text-content {
 #anabels {
 	text-decoration: none;
 	color: #ff2468;
+	transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 #anabels:hover {
 	color: #00a5a6;
