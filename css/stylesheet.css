@@ -243,6 +243,7 @@ span.text-content span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  padding: 3%;
 }
 ul.img-list li:hover span.text-content {
   opacity: 1;
