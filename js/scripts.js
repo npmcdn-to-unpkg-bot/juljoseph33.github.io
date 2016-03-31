@@ -7,7 +7,7 @@ $(document).ready(function() {
 		if ($('.'+num).is(':visible')) {
 			$('#'+num).text(' Read Less');
 			var selector = '#'+$(this).parent('p').parent().attr('id') + ' p';
-			var pixels = getExtra(selector).toString()
+			var pixels = getExtra(selector).toString();
 			var addpixels = '+='+pixels+'px';
 			minuspixels = '-='+pixels+'px';
 			$(this).parent().parent().css('margin-bottom', addpixels);
@@ -55,6 +55,8 @@ $(document).ready(function() {
 		verticalScrolling: true,
 		scrollProperty: 'position'
 	});
+
+
 });
 function getExtra(selector) {
     var height = $(selector).height();
