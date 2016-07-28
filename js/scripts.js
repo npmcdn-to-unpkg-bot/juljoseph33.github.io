@@ -17,7 +17,7 @@ $(document).ready(function() {
 			$(this).parent().parent().css('margin-bottom', minuspixels);
 		}
 	});
-	$(".fancybox").fancybox();
+	// $(".fancybox").fancybox();
 	// smooth scrolling
 	$(document).on('click', 'a[href^="#"]', function(e) {
 		var id = $(this).attr('href');
@@ -31,22 +31,47 @@ $(document).ready(function() {
 	});
 	// animate and toggle job functions
 	$('#clickjj').click(function() {
+		$('#jj2:visible').hide("slow");
+		$('#is:visible').hide("slow");
+		$('#ean:visible').hide("slow");
 		$('#jj').show("slow");
-		$('#is').hide("slow");
-		$('#ean').hide("slow");
+	});
+	$('#clickjj2').click(function() {
+		$('#jj:visible').hide("slow");
+		$('#is:visible').hide("slow");
+		$('#ean:visible').hide("slow");
+		$('#jj2').show("slow");
 	});
 	$('#clickis').click(function() {
+		$('#jj2:visible').hide("slow");
+		$('#jj:visible').hide("slow");
+		$('#ean:visible').hide("slow");
 		$('#is').show("slow");
-		$('#jj').hide("slow");
-		$('#ean').hide("slow");
 	});
 	$('#clickean').click(function() {
+		$('#jj2:visible').hide("slow");
+		$('#is:visible').hide("slow");
+		$('#jj:visible').hide("slow");
 		$('#ean').show("slow");
-		$('#is').hide("slow");
-		$('#jj').hide("slow");
 	});
 	// plugin for sticky header
 	$('#nav').scrollToFixed();
+
+	// filterable nav
+	var isotopeContainer = $('.isotopeContainer');
+	if( !isotopeContainer.length || !jQuery().isotope ) return;
+	$(window).load(function(){
+		isotopeContainer.isotope({
+			itemSelector: '.isotopeSelector'
+		});
+	$('.isotopeFilters').on( 'click', 'a', function(e) {
+			$('.isotopeFilters').find('.active').removeClass('active');
+			$(this).parent().addClass('active');
+			var filterValue = $(this).attr('data-filter');
+			isotopeContainer.isotope({ filter: filterValue });
+			e.preventDefault();
+		});
+	});
 
 	// FINAL LINES OF FUNCTION
 	// parallax

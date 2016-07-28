@@ -22,10 +22,6 @@ darker blue: #005b63
 .blue {
 	color: #00a5a6;
 }
-
-.bold {
-	font-weight: 900;
-}
 .italics {
 	font-style: italic;
 }
@@ -217,6 +213,7 @@ darker blue: #005b63
 
 .img-list img {
 	height: 200px;
+	width: 200px;
 	opacity: 0.4;
 	-webkit-filter: grayscale(100%);
 }
@@ -272,7 +269,7 @@ ul.img-list li:hover span.text-content {
 .jobheader {
 	text-align: center;
 }
-#is, #ean {
+#is, #ean, #jj {
 	display: none;
 }
 .jobindent {

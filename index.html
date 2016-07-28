@@ -4,12 +4,15 @@
 	<title>Julia Joseph</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
 	<!-- <link rel="icon" type="image/x-icon" href="img/favicon.png" /> -->
 	<script src="js/scripts.js"></script>
 	<script src="js/stellar.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/scrolltofixed.js"></script>
+	<script src="js/filterable.js"></script>
+	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 
 	<!-- Add fancyBox -->
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -45,10 +48,10 @@
 </div>
 <a href="#bio"><button id="learnmore">Learn More</button></a> 
 
-<div id="bio"><h1>Who I Am: The Basics</h1><hr class='long' /><p>I am a junior at Cornell University, studying Information Science, Systems, and Technology at Cornell's College of Engineering. I grew up in Rye Brook, New York, located in Westchester County.<br>On campus, I am:</p>
+<div id="bio"><h1>Who I Am: The Basics</h1><hr class='long' /><p>I am a senior at Cornell University, studying Information Science, Systems, and Technology at Cornell's College of Engineering. I grew up in Rye Brook, New York, located in Westchester County.<br>On campus, I am:</p>
 	<ul>
 		<li>a member of the Big Red Marching Band Clarinet Section</li>
-		<li>the Webmaster of Anabel's Grocery, a student-run grocery store</li>
+		<li>on the IT Team for Anabel's Grocery, a student-run grocery store</li>
 		<li>a member of Phi Sigma Pi, a national honors fraternity</li>
 	</ul>
 	<p>In the past, I have been:</p>
@@ -57,7 +60,7 @@
 		<li>the Historian and Parliamentarian for Phi Sigma Pi</li>
 		<li>a research assistant for the Reimagination Lab (Department of Information Science)</li>
 	</ul>
-	<p>In my spare time I like to read, make playlists on Spotify, run, play the ukulele/piano/clarinet, make lists, and listen to poetry on YouTube.<br><br><span class="pink">I designed and coded this website from scratch, using HTML, CSS, JavaScript, and JQuery.</span></p>
+	<p>In my spare time I like to read, make playlists on Spotify, run, play the ukulele/piano/clarinet, write and read articles on Medium, and listen to poetry on YouTube.<br><br><span class="pink">I designed and coded this website from scratch, using HTML, CSS, JavaScript, and JQuery.</span></p>
 </div>
 
 <div id="school" data-stellar-background-ratio="0.5">
@@ -67,7 +70,7 @@
 		<strong>Year: </strong>2017<br><br>
 		<strong>College: </strong>Engineering<br><br>
 		<strong>Major: </strong>Information Science, Systems, and Technology<br><br>
-		<strong>Relevant Coursework: </strong><br></p><p class='indent'>Intermediate Web Programming; Object Oriented Programming and Data Structures; Discrete Structures; Basic Engineering Probability and Statistics; Engineering Probability and Statistics II; Optimization; Introduction to Artificial Intelligence; Networks; Networks II; Introduction to Programming with Python; Introduction to Programming with the Web; Communication and Technology; Perception; Computing Cultures; Reasoning and Agents<span class="blue">***</span>; Data, Design, and Society<span class="blue">***</span><br><br><span class="blue">***</span> Taken at the University of Edinburgh, Spring 2016
+		<strong>Relevant Coursework: </strong><br></p><p class='indent'>Intermediate Web Programming; Object Oriented Programming and Data Structures; Discrete Structures; Basic Engineering Probability and Statistics; Engineering Probability and Statistics II; Optimization; Introduction to Artificial Intelligence; Networks; Networks II; Introduction to Programming with Python; Introduction to Programming with the Web; Communication and Technology; Perception; Computing Cultures; Reasoning and Agents<span class="blue">***</span>; Data, Design, and Society<span class="blue">***</span>; Human Computer Interaction Design (Fall 2016); Introduction to Rapid Prototyping (Fall 2016); Law of Internet and E-Commerce (Fall 2016); Machine Learning for Data Science (Fall 2016)<br><br><span class="blue">***</span> Taken at the University of Edinburgh, Spring 2016
 	</p>
 </div>
 </div>
@@ -76,9 +79,13 @@
 	<h1>Work Experience</h1>
 
 	<ul class="img-list">
+		<li id="clickjj2">
+				<img src="img/jj2.jpeg" alt="jj2" />
+				<span class="text-content"><span>Johnson &amp; Johnson: Data and Analytics Intern</span></span>
+		</li>
 		<li id="clickjj">
 				<img src="img/jj.JPG" alt="jj" />
-				<span class="text-content"><span>Johnson &amp; Johnson: IT Intern</span></span>
+				<span class="text-content"><span>Johnson &amp; Johnson: Information Security Intern</span></span>
 		</li>
 		<li id="clickis">
 				<img src="img/is.jpg" alt="is" />
@@ -90,15 +97,28 @@
 		</li>
 	</ul>
 
-	<div class="describe" id="jj">
-		<h3>Johnson &amp; Johnson: IT Intern</h3>
+	<div class="describe" id="jj2">
+		<h3>Johnson &amp; Johnson: Data and Analytics Intern</h3>
 		<p>
-		<span class="jobheader"><strong>Duration: </strong>May 2015-August 2015</span><br><br>
-		<strong>The Job: </strong>
+		<span class="jobheader">Duration: June 2016-August 2016</span><br><br>
+		The Job:
 		<span id="qwerty" class="jobindent">
-			Develop tools using Python, cURL, and various APIs for Information Security and Risk Management to automate workflow processes, reducing time by 4 hours and decreasing human error.
-			Participate in several stretch projects for Application Services, including creating websites with HTML/CSS/JavaScript, and integrating Google Analytics with Visualforce/Salesforce websites.
-			Write threat advisory reports for Cyber Security Investigations.
+			Developed seating reservation system using PHP, SQL, HTML, and JavaScript to increase workplace efficiency and decrease overcrowding.<br>
+			Designed standard dashboard to display Google Analytics metrics in Google Data Studio.<br>
+			Created logo, agenda, and badge design for Women's Leadership Event.
+		</span>
+		</p>
+	</div>
+
+	<div class="describe" id="jj">
+		<h3>Johnson &amp; Johnson: Information Security Intern</h3>
+		<p>
+		<span class="jobheader">Duration: May 2015-August 2015</span><br><br>
+		The Job:
+		<span class="jobindent">
+			Developed tools using Python, cURL, and various APIs for to automate workflow processes. Saved 4 hours of process time, decreased human error.<br>
+			Participated in several stretch projects for Application Services. Created website mockups, integrated Google Analytics with websites built in Visualforce on top of Salesforce.<br>
+			Wrote daily threat advisory reports for Cyber Security Investigations.
 		</span>
 		</p>
 	</div>
@@ -128,38 +148,43 @@
 </div>
 
 <div id="portfolio">
-	<div id='portfolioheader'><h1>My Portfolio</h1></div>
-	<ul>
-		<li id="webmaster" class="projects">
-			<a class='fancybox' rel='groupone' href="img/Anabels1.png"><img alt="placeholder" src="img/Anabels1small.png" /></a>
-			<div class="hidden">
-			<a class='fancybox' rel='groupone' href="img/Anabels2.png"><img alt="placeholder" src="img/Anabels2small.png" /></a>
-			<a class='fancybox' rel='groupone' href="img/Anabels3.png"><img alt="placeholder" src="img/Anabels3small.png" /></a>
-			<a class='fancybox' rel='groupone' href="img/Anabels4.png"><img alt="placeholder" src="img/Anabels4small.png" /></a>
-			</div>
-			<p>These are screenshots for a website I am designing and developing for Anabel's Grocery (<a id="anabels" target="_blank" href="http://www.anabelsgrocery.com">anabelsgrocery.com</a>), a student-run on-campus market. I am using HTML, CSS, JavaScript, JQuery, AJAX, PHP, and SQL to <span class="content 1">do this. Some of the requirements for this project include: using technology to secure confidential student data, create the first iteration of the website in one month in time for the school year, and work with relevant teams (Marketing, Creative, Design, Programming, Risk Management, Data Analytics) to ensure that the website has all of the frontend and backend functionality it needs to be useful for both staff members and customers.</span><span class="show_hide" id="1"> ...Read More</span></p>
-		</li>
+	<div id='portfolioheader'><h1>Portfolio and Projects</h1></div>
+	<!-- <div class="filter-container isotopeFilters2">
+	    <ul class="list-inline filter">
+	        <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
+	        <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
+	        <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
+	        <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
+	        <li><a href="#" data-filter=".art">Art</a></li>
+	    </ul>
+	</div>
 
-		<li id="a" class="projects">
-			<a class='fancybox' rel='grouptwo' href="img/BetaNuHome.png"><img alt="placeholder" src="img/BetaNuHomeSmall.png" /></a>
-			<div class="hidden">
-			<a class='fancybox' rel='grouptwo' href="img/BetaNu.png"><img alt="placeholder" src="img/BetaNuSmall.png" /></a>
-			<a class='fancybox' rel='grouptwo' href="img/AutofillBrothers.png"><img alt="placeholder" src="img/AutofillBrothersSmall.png" /></a>
-			<a class='fancybox' rel='grouptwo' href="img/EditBrothers.png"><img alt="placeholder" src="img/EditBrothersSmall.png" /></a>
-			</div>
-			<p>These are screenshots of a small, personal website project that I created for my fraternity. I used HTML, CSS, JavaScript/JQuery, PHP, and SQLite to create it. The <span class="content 2">idea behind that project was to store information about "family trees" and "fraternity lineages" in a database that allowed for editing, deleting, and adding new members. The database is searchable. One interesting feature of the database (that I coded) is that it will automatically update the "Big" or "Little" fields of the relevant Brother when a new member of the lineage is added or edited. Highlighted techniques: I used AJAX to make my own autofill search bar, and I used PHP to dynamically generate "Edit" pages.</span><span class="show_hide" id="2"> ...Read More</span></p>
-		</li>
-		
-		<li id="b" class="projects">
-			<a class='fancybox' rel='groupthree' href="img/p3Home.png"><img alt="placeholder" src="img/p3HomeSmall.png" /></a>
-			<div class="hidden">
-			<a class='fancybox' rel='groupthree' href="img/p3Albums.png"><img alt="placeholder" src="img/p3AlbumsSmall.png" /></a>
-			<a class='fancybox' rel='groupthree' href="img/p3Images.png"><img alt="placeholder" src="img/p3Images.png" /></a>
-			<a class='fancybox' rel='groupthree' href="img/p3EditImage.png"><img alt="placeholder" src="img/p3EditImageSmall.png" /></a>
-			</div>
-			<p>These are screenshots of a website that I built for Intermediate Programming for the Web (Info 2300). The website is a photo album database. I used HTML, CSS, JavaScript/JQuery, <span class="content 3">PHP, and SQL to build this. The photo album has login functionality: the base user experience supports viewing images and albums only, and the user has to log in to be able to edit, add, and delete albums and images.</span><span class="show_hide" id="3"> ...Read More</span></p>
-		</li>
-	</ul>
+	<div class="isotopeContainer">
+
+		<div class="col-3 isotopeSelector art">
+		    <article class="">
+		        <figure>
+		            <img src="images/portfolio/22.jpg" alt="">
+		            <div class="overlay-background">
+		                <div class="inner"></div>
+		            </div>
+		            <div class="overlay">
+		                <div class="inner-overlay">
+		                    <div class="inner-overlay-content with-icons">
+		                        <a title="First Image" class="fancybox-pop" rel="portfolio-22" href="images/portfolio/22.jpg"><i class="fa fa-search"></i></a>
+		                        <a title="Second Image"  class="fancybox-pop" style="display: none" href="images/portfolio/17.jpg" rel="portfolio-22"></a>
+		                        <a title="Third Image"  class="fancybox-pop" style="display: none" href="images/portfolio/18.jpg" rel="portfolio-22"></a>
+		                        <a href="#"><i class="fa fa-link"></i></a>
+		                    </div>
+		                </div>
+		            </div>
+		        </figure>
+		        <div class="article-title"><a href="#">Nipperkin run</a></div>
+		    </article>
+		</div>	
+
+	</div> -->
+
 </div>
 
 
