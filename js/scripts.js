@@ -57,20 +57,40 @@ $(document).ready(function() {
 	// plugin for sticky header
 	$('#nav').scrollToFixed();
 
-	// filterable nav
-	var isotopeContainer = $('.isotopeContainer');
-	if( !isotopeContainer.length || !jQuery().isotope ) return;
-	$(window).load(function(){
-		isotopeContainer.isotope({
-			itemSelector: '.isotopeSelector'
-		});
-	$('.isotopeFilters').on( 'click', 'a', function(e) {
-			$('.isotopeFilters').find('.active').removeClass('active');
-			$(this).parent().addClass('active');
-			var filterValue = $(this).attr('data-filter');
-			isotopeContainer.isotope({ filter: filterValue });
-			e.preventDefault();
-		});
+	var $container = $('.portfolio'); 
+    $container.isotope({ 
+        filter: '*', 
+        animationOptions: { 
+            duration: 800, 
+            easing: 'quadratic', 
+            queue: false, 
+        } 
+    }); 
+    $('nav.primary ul a').click(function(){ 
+        var selector = $(this).attr('data-filter'); 
+        $container.isotope({ 
+            filter: selector, 
+            animationOptions: { 
+                duration: 800, 
+                easing: 'quadratic', 
+                queue: false, 
+            } 
+        }); 
+      return false; 
+    }); 
+
+    var $optionSets = $('nav.primary ul'), 
+       $optionLinks = $optionSets.find('a'); 
+   
+       $optionLinks.click(function(){ 
+          var $this = $(this); 
+      // don't proceed if already selected 
+      if ( $this.hasClass('selected') ) { 
+          return false; 
+      } 
+	   var $optionSet = $this.parents('nav.primary ul'); 
+	   $optionSet.find('.selected').removeClass('selected'); 
+	   $this.addClass('selected');  
 	});
 
 	// FINAL LINES OF FUNCTION

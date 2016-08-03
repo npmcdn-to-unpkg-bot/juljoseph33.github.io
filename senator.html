@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Julia Joseph</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+	<!-- <link rel="icon" type="image/x-icon" href="img/favicon.png" /> -->
+	<script src="js/scripts.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/scrolltofixed.js"></script>
+	<script src="js/filterable.js"></script>
+	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+
+<body>
+
+<div id="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html#aboutme">About Me</a></li>
+		<li><a href="index.html#work">Work Experience</a></li>
+		<li><a href="index.html#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="resumeIS.pdf" target="_blank">Resume</a></li>
+	</ul>
+</div>
+
+<div id="projecttitle"><h1>EmailMySenator</h1><hr /><h3>Personal Project</h3></div>
+
+<div id="summary"><p>I built the first iteration of <a href="http://emailmysenator.com" target="_blank">http://emailmysenator.com</a> in a four day sprint during the summer of 2016. EmailMySenator was a direct response to the shootings of Alton Sterling and Philando Castile. The purpose of this project is to increase civic engagement by making it easier to contact your senators about increasing gun control and decreasing gun violence.</p></div>
+
+<div id="portfoliodescription">
+	<h2>Background</h2>
+	<p>I began to feel frustrated about gun control right around the time when I was getting news updates every other day about gun violence. It was beginning to feel like shootings were mainstream. One of the few things I knew I could do as a regular citizen of the U.S. is email my senators about gun violence. However, I was discouraged from doing so as soon as I navigated to the senator contact page (<a href="http://www.senate.gov/senators/contact/senators_cfm.cfm" target="_blank">http://www.senate.gov/senators/contact/senators_cfm.cfm</a>). Below are screenshots of the three steps required to navigate to Senator Gillibrand's contact page.<br><br> 
+
+	<a class="padding_link" target="_blank" href="portfolio_assets/Senator/step1.png"><img src="portfolio_assets/Senator/step1.png" alt='dpsketch'></a><a class="padding_link" href="portfolio_assets/Senator/step2.png" target="_blank"><img src="portfolio_assets/Senator/step2.png" alt='dppsd'></a><br><br><br>
+	<a class="padding_link" target="_blank" href="portfolio_assets/Senator/step3.png"><img src="portfolio_assets/Senator/step3.png" alt='dpsketch'></a><br><br><br>
+
+	Notice how each senator requires (slightly different) masses of information to be entered in every time you want to send the email. It takes a minimum of three clicks to even just get to the form--and then the user has to enter in a ton of information each time they want to send a letter! I also had no idea what to write in the body of the message, nor the inclination to rewrite the email every time I wanted to contact my senators about the same issue. I began to think of ways to improve this user experience in order to empower citizens to make a real difference in American politics. Enter my website.</p><br>
+
+	<h2>My Vision</h2>
+	<p>My vision for this tool was to create a website where the user only has to input their information once, this information is saved and hereonin autopopulated, and a (fully editable) form letter is provided urging the senator to do something about gun violence. The user only has to press one button to send the same email every day.</p><br>
+
+	<h2>Creating the Website</h2>
+
+	<h3>User Research</h3>
+	<p>I started by gathering requirements for the website. I knew from speaking to my peers (who were also frustrated by the contact form UX, who were not motivated to send emails to their senators) that the website needed to be easy to use. I also discovered that users liked the idea of having a form letter provided for them, but insisted that the letter be editable. Another demographic I wanted to target was the older generation. After speaking with some members of this user group, I decided to forgo the idea of using a database to store user information and instead only store information on permanent cookies on the browser. This meant that their information would be safe--i.e. there was no way someone could hack into a database to steal their information if their information simply wasn't available.</p><br>
+
+	<h3>Design</h3>
+	<p>I created my first sketch of the website/user flow (see below). It was important that the user experience was as seamless and easy as possible. It was my goal to minimize the amount of time each user spends clicking on the website. <br><br>
+	<a class="padding_link" target="_blank" href="portfolio_assets/Senator/userflow.jpg"><img src="portfolio_assets/Senator/userflow.jpg" alt='dpsketch'></a><br><br><br>
+
+	The first sketch of this website is below. I wanted to make the design as simple and easy to code as possible, because I wanted to get the website out as soon as I could. It was necessary for the success of the launch that EmailMySenator was released on the heels of increased interest in gun control; as a result, I gave myself a hard deadline of one week to complete the first iteration of the project.<br><br><a class="padding_link" target="_blank" href="portfolio_assets/Senator/sketch.jpg"><img src="portfolio_assets/Senator/sketch.jpg" alt='dpsketch'></a>
+
+	<br><br><br>I chose a color scheme of teal and a pink accent because it was vaguely synonymous with the colors of the American Flag.
+	</p><br>
+
+	<h3>Information Gathering</h3>
+	<p>I spent the first few days manually going through all 100 senator's contact forms to find out how the forms POST, what the input field names are, what the least required amount of information per senator was, and the best way to automate the process as best as possible. I was able to find the building blocks of each form's POST strings and URL. I filled out as much information as possible for the end user, including pre-setting the "message subject" and providing the user with a form letter.
+	</p><br>
+
+	<h3>Technologies Used</h3>
+	<p>I built EmailMySenator using HTML, CSS, JavaScript, and PHP. I used PHP and cURL to remotely submit each senator's contact form.
+	</p><br>
+
+	<h2>Results</h2>
+	<p>Over 600 people visited the website three weeks after deployment. The website is live, and can be found at <a href="http://emailmysenator.com" target="_blank">http://emailmysenator.com</a>. 
+</p>
+</div>
+
+<div id="contact">
+	<span id="info">
+	<a target="_blank" href="https://www.linkedin.com/pub/julia-joseph/83/a35/293"><img src="img/linkedin.svg" alt="linkedin" /></a>
+	<a target="_blank" href="https://github.com/juljoseph33"><img src="img/github.svg" alt="github" /></a>
+	<span id="specific">jrj85@cornell.edu &bull; 914-924-8219</span>
+	<a id="fb" target="_blank" href="https://www.facebook.com/julia.joseph.92798"><img src="img/facebook.svg" alt="facebook" /></a>
+	<a target="_blank" href="https://twitter.com/JuliaRJoseph"><img src="img/twitter.svg" alt="twitter" /></a>
+	</span>
+</div>
+
+</body>
+
+</html>
