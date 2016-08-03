@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Julia Joseph</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+	<!-- <link rel="icon" type="image/x-icon" href="img/favicon.png" /> -->
+	<script src="js/scripts.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/scrolltofixed.js"></script>
+	<script src="js/filterable.js"></script>
+	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+
+<body>
+
+<div id="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html#aboutme">About Me</a></li>
+		<li><a href="index.html#work">Work Experience</a></li>
+		<li><a href="index.html#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="resumeIS.pdf" target="_blank">Resume</a></li>
+	</ul>
+</div>
+
+<div id="projecttitle"><h1>Seating Reservation System</h1><hr /><h3>Intern Project</h3></div>
+
+<div id="summary"><p>I spearheaded, designed, and built a seating reservation system from scratch in order to minimize the office overcrowding problem and to increase efficiency in the Johnson &amp; Johnson workplace.</p></div>
+
+<div id="portfoliodescription">
+	<h2>Background</h2>
+	<p>My manager gave me this project in the summer of 2016 in an attempt to fix the problem of overcrowding (1.2 people per desk) in our office space. My task was to build a real-time seating reservation system in order to increase employee efficiency and decrease overcrowding. I acted as the Project Owner, Designer, and Developer. There are two use cases for the system: the first was that a user had to be able to reserve a desk for the day. The second was that a remote user had to be able to "check out" their desk to make it available for someone else to sit in for the day.</p><br>
+
+	<h2>Creating the System</h2>
+
+	<h3>User Research</h3>
+	<p>I conducted interviews with five interns and full time employees to discover the pain points of the current desk allocation system. I then turned these interviews into user stories of the format "As a <type of user>, I want <some goal> so that <some reason>".<br><br><a class="padding_link" href="portfolio_assets/SeatPlan/userstories.PNG" target="_blank"><img src="portfolio_assets/SeatPlan/userstories.PNG" alt="userflow"></a><br><br> I then translated these user stories into business requirements.<br><br><a class="padding_link" href="portfolio_assets/SeatPlan/features.PNG" target="_blank"><img src="portfolio_assets/SeatPlan/features.PNG" alt="userflow"></a></p><br>
+
+	<h3>Design</h3>
+	<p>From user interviews, I discovered that most people prefered to use a clickable floor plan as opposed to seeing a list of available desks. As a result, I decided to use the HTML5 map feature to display available desks. My rough outline of the user flow is here. <br><br>
+	<a class="padding_link" target="_blank" href="portfolio_assets/SeatPlan/userflow.jpg"><img src="portfolio_assets/SeatPlan/userflow.jpg" alt='dpsketch'></a>
+	</p><br>
+
+	<h3>Development</h3>
+	<p>I built the system using HTML, CSS, Bootstrap, JQuery, HTML5/JavaScript Server Side Events, PHP, and MySQL in 2-week long Agile sprints. The floor plan updates itself in real time based on information in the database through Server Side Events. The database design can be seen below. I used MySQL Events to automatically clear old reservations and old check-outs, and to add new check-outs in the queue.<br>Features include: signup, login, see available desks, reserve a desk for the day, check out your desk for today, check out your desk for tomorrow by adding it to the queue.<br><br>
+	<a class="padding_link" target="_blank" href="portfolio_assets/SeatPlan/database.PNG"><img src="portfolio_assets/SeatPlan/database.PNG" alt='dpsketch'></a>
+	</p><br>
+
+	<h3>Testing</h3>
+	<p>I tested the floor plan on a couple of my peers, and I used their feedback to improve during the next spring by adding backwards navigation and better error checking and notifications.<br><br>
+	<a class="padding_link" target="_blank" href="portfolio_assets/SeatPlan/testplan.JPG"><img src="portfolio_assets/SeatPlan/testplan.JPG" alt='dpsketch'></a>
+	</p><br>
+
+	<h2>Result</h2>
+	<p>Below you can find a video demo of the reservation system! In this demo I am using two browsers (one on Incognito) in order to demonstrate the real-time functionality.<br><br><br>
+	<span class="padding_link"><video controls><source src="portfolio_assets/SeatPlan/screenvid.mov"></video></span></p>
+</div>
+
+<div id="contact">
+	<span id="info">
+	<a target="_blank" href="https://www.linkedin.com/pub/julia-joseph/83/a35/293"><img src="img/linkedin.svg" alt="linkedin" /></a>
+	<a target="_blank" href="https://github.com/juljoseph33"><img src="img/github.svg" alt="github" /></a>
+	<span id="specific">jrj85@cornell.edu &bull; 914-924-8219</span>
+	<a id="fb" target="_blank" href="https://www.facebook.com/julia.joseph.92798"><img src="img/facebook.svg" alt="facebook" /></a>
+	<a target="_blank" href="https://twitter.com/JuliaRJoseph"><img src="img/twitter.svg" alt="twitter" /></a>
+	</span>
+</div>
+
+</body>
+
+</html>
