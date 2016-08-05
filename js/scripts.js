@@ -66,9 +66,10 @@ $(document).ready(function() {
             queue: false, 
         } 
     }); 
-    $(window).load(function() {
-	    $('nav.primary ul a').click(function(){ 
-	        var selector = $(this).attr('data-filter'); 
+    
+    $('nav.primary ul a').click(function(){ 
+        var selector = $(this).attr('data-filter'); 
+        $(window).load(function() {
 	        $container.isotope({ 
 	            filter: selector, 
 	            animationOptions: { 
@@ -77,10 +78,10 @@ $(document).ready(function() {
 	                queue: false, 
 	            } 
 	        }); 
-	      return false; 
-	    }); 
-    });
-
+        });
+      return false; 
+    }); 
+    
     var $optionSets = $('nav.primary ul'), 
        $optionLinks = $optionSets.find('a'); 
    
