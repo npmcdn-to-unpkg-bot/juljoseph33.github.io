@@ -69,16 +69,17 @@ $(document).ready(function() {
     
     $('nav.primary ul a').click(function(){ 
         var selector = $(this).attr('data-filter'); 
-        $(window).load(function() {
-	        $container.isotope({ 
-	            filter: selector, 
-	            animationOptions: { 
-	                duration: 800, 
-	                easing: 'quadratic', 
-	                queue: false, 
-	            } 
-	        }); 
-        });
+        $container.isotope({ 
+            filter: selector, 
+            animationOptions: { 
+                duration: 800, 
+                easing: 'quadratic', 
+                queue: false, 
+            } 
+        }); 
+        $container.imagesLoaded().progress( function() {
+		  $container.isotope('layout');
+		});
       return false; 
     }); 
     
