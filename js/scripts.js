@@ -66,18 +66,20 @@ $(document).ready(function() {
             queue: false, 
         } 
     }); 
-    $('nav.primary ul a').click(function(){ 
-        var selector = $(this).attr('data-filter'); 
-        $container.isotope({ 
-            filter: selector, 
-            animationOptions: { 
-                duration: 800, 
-                easing: 'quadratic', 
-                queue: false, 
-            } 
-        }); 
-      return false; 
-    }); 
+    $(window).load(function() {
+	    $('nav.primary ul a').click(function(){ 
+	        var selector = $(this).attr('data-filter'); 
+	        $container.isotope({ 
+	            filter: selector, 
+	            animationOptions: { 
+	                duration: 800, 
+	                easing: 'quadratic', 
+	                queue: false, 
+	            } 
+	        }); 
+	      return false; 
+	    }); 
+    });
 
     var $optionSets = $('nav.primary ul'), 
        $optionLinks = $optionSets.find('a'); 
