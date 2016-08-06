@@ -6,6 +6,7 @@ html, body {
 body {
 	margin-bottom: -1%;
 	color: #222222;
+	line-height: 1.3;
 }
 
 /* colors!
@@ -96,7 +97,7 @@ darker blue: #005b63
 }
 #aboutme h1{
 	text-align: center;
-	padding-top: 6%;
+	padding-top: 7%;
 	padding-bottom: 10%;
 	/*color: #ff2468;*/
 }
@@ -154,6 +155,12 @@ darker blue: #005b63
 #bio ul {
 	margin-left: 27.5%;
 	margin-top: -2%;
+}
+#bio a {
+	color: #00a5a6;
+}
+#bio a:hover {
+	color: #ff2468;
 }
 
 
